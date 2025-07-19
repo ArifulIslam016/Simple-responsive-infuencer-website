@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Shared Styles */
+* {
+  font-family: "Poppins", sans-serif;
+  
+}
+.btn-primary{
+    background-color:#E02C6D ;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;  
+    border-radius: 41px;
+    border: none;
+    align-items: center;
+    width: 200px;
+    height: 44px;
+}
+.color-1{
+    color: #3A3A3A;
+}
+/* header section */
+
+/* nav-bar */
+.nav-bar, .nav-items ul {
+    display: flex;  
+    justify-content:  space-between;
+    align-items: center;  
+    max-width:1200px ;
+  
+   margin: 87px auto;
+}
+.nav-items li {
+list-style: none;
+margin-right:  2.1rem ;
+font-size: 16px;
+font-weight: 600;
+}
+.brand-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* Banner Section */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 58px auto;
+    max-width: 1188px;
+} 
+.baner-title{ font-size: 52px;
+    font-weight: bold;
+}
+.banner-description{
+    font-size:16px ;
+    font-weight:600;
+    max-width: 505px;
+}
+.baner-img{
+    background-image: url(images/j.jpg);
+    border-radius: 45px;
+}
+/* Logo Section */
+.logo-container{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    max-width: 1110px;
+    margin: 170px auto;
+}
+/* Colection Section of main */
+.collection{
+    max-width: 1047px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.c-item{
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15) ;
+    padding: 17px 15px;
+}
+.c-item img{
+    width:100% ;
+}
+.c-item-name{
+    font-size:28px;
+    font-weight: 600;
+    color: #18191F;
+    margin-top:6px;
+    margin-bottom: 0px; 
+}
+.c-item-price{
+    color:rgba(0, 0, 0, 0.87);
+    font-size:24px;
+    margin-top: 0px;
+}
+.item-rating {
+    margin-top: 0px ;
+}
+.c-item-description{
+   color: rgba(120, 120, 133, 1);
+   font-size: 14px;
+}
+.Featured{
+    max-width: 1110px;
+    display:flex ;
+    margin:100px auto;
+    justify-content: space-between;
+}
+.join-btn{
+    border-radius: 0;
+    max-width: 9.9rem;
+}
+
+
+/* Featured Section */
+
+.f-img{
+    margin-right: 6rem;
+}
+.f-title{
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #0A0826;
+}
+.f-discription{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6C6C6C;
+     max-width: 510px;
+}
+.footer{
+    max-width: 1440px;
+  
+    margin:0 auto ;
+    background-color: rgb(2, 2, 17);
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.footer-description{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+.footer-warning{
+    margin-bottom: 2px;
+}
+
+
+/* Responsive Section of Smaler device */
+@media screen and (max-width:576px) {
+    .banner{
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.logo-container{
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+}
+.nav-bar, .nav-items ul{
+    flex-direction: column;
+}
+.collection{
+    grid-template-columns: repeat(1, 1fr);
+    padding-right: 0;
+    padding: 0 auto;
+    
+ 
+}
+.Featured{
+    flex-direction: column;
+    text-align: center;
+}
+}
+
+
